@@ -1,5 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, memo } from 'react';
 import ThemeContext from './Context';
+
 const Child1 = () => {
   console.log('child1', useContext(ThemeContext));
   const ContextVal = useContext(ThemeContext);
